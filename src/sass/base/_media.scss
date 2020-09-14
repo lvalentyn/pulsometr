@@ -40,7 +40,6 @@
 @media (max-width: 575px) {
     .page {
         .promo {
-            
             .container {
                 .header{
                     flex-direction: column;
@@ -80,6 +79,22 @@
             }
             &__card {
                 margin-top: 20px;
+            }
+        }
+        .consultation {
+            min-height: 500px;
+            padding: 20px 0 30px;
+            .title_left {
+                text-align: center;
+                font-size: 33px;
+                line-height: 42px;
+            }
+            &__descr {
+                margin-top: 10px;
+                text-align: center;
+            }
+            .feed-form {
+               margin: 20px auto 0;
             }
         }
     }
