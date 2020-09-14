@@ -1,0 +1,86 @@
+@media (max-width: 1199px) {}
+@media (max-width: 991px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+@media (max-width: 767px) {
+    .page {
+    .promo {
+        padding: 20px 0 40px;
+        min-height: 550px;
+        .container {
+            .header{
+                &__logo {
+                    width: 200px;
+                }
+                &__official {
+                    font-size: 10px;
+                    span {
+                        font-size: 16px;
+                    }
+                }
+                &__phone {
+                    font-size: 16px;
+                }
+            }
+            .promo__wrapper{
+                margin-top: 60px;
+                align-items: center;
+          }
+        }
+    }
+    .advantages {
+        padding: 20px 0 20px;
+        &__wrapper {
+            margin-top: 30px;
+        }
+    }}
+}
+@media (max-width: 575px) {
+    .page {
+        .promo {
+            
+            .container {
+                .header{
+                    flex-direction: column;
+                    &__logo {
+                        width: 250px;
+                    }
+                    &__official {
+                        margin-top: 20px;
+                        span {
+                        }
+                    }
+                    &__phone {
+                        margin-top: 20px;
+                    }
+                }
+            }
+            &__header {
+                text-align: center;
+            }
+            &__subheader {
+                text-align: center;
+            }
+            &__icons {
+                width: 100%;
+                margin-top: 50px;
+                justify-content: center;
+            }
+        }
+        .button_main {
+            margin-top: 50px;
+        }
+        .advantages{
+            &__wrapper {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 0px;
+            }
+            &__card {
+                margin-top: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.advantages {
+    min-height: 473px;
+    padding: 70px 0 80px;
+    background-color: #f6f6f6;
+    &__header {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+    }
+    &__card {
+        width: 240px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        span {
+            display: block;
+            margin-bottom: 20px;
+                font-size: 18px;
+                font-weight: 600;
+        }
+        a {
+            color: red;
+            text-transform: uppercase;
+            text-decoration: underline;
+            &:hover {
+                color: blue;
+            }
+        }
+    }
+}
