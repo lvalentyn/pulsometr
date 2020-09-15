@@ -1,7 +1,6 @@
 
 @import "./base/variables";
 @import "./base/mixins";
-@import "./base/general";
 @import "./base/media";
 
 * {
@@ -10,6 +9,7 @@
 h1, h2 {
     margin: 0;
 }
+
 .container {
     max-width: 950px;
     margin: 0 auto;
@@ -22,3 +22,6 @@ h1, h2 {
 @import "./blocks/title";
 @import "./blocks/consultation";
 @import "./blocks/forms";
+@import "./blocks/carousel";
+@import "./blocks/catalog";
+@import "./blocks/reviews";

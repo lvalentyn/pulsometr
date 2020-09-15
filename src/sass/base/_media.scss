@@ -1,41 +1,122 @@
-@media (max-width: 1199px) {}
+@media (max-width: 1199px) {
+    .page{
+        .catalog {
+            &-item {
+                margin: 0 15px 15px 0;
+            }
+        }
+    }
+}
 @media (max-width: 991px) {
-    .container {
-        padding: 0 10px;
+    .page {
+        .container {
+            padding: 0 10px;
+        }
+        .carousel {
+            &__inner {
+                width: 450px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .catalog {
+            &__content {
+                padding: 0 50px;
+                justify-content: center;
+            }
+            &-item {
+                margin: 0 15px 15px 0;
+                &:nth-child(3n+3) {
+                    margin-right: 15px;
+                }
+                &:nth-child(2n+2) {
+                    margin-right: 0;
+                }
+            }
+        }
     }
 }
 @media (max-width: 767px) {
     .page {
-    .promo {
-        padding: 20px 0 40px;
-        min-height: 550px;
-        .container {
-            .header{
-                &__logo {
-                    width: 200px;
-                }
-                &__official {
-                    font-size: 10px;
-                    span {
+        .promo {
+            padding: 20px 0 40px;
+            min-height: 550px;
+            .container {
+                .header{
+                    &__logo {
+                        width: 200px;
+                    }
+                    &__official {
+                        font-size: 10px;
+                        span {
+                            font-size: 16px;
+                        }
+                    }
+                    &__phone {
                         font-size: 16px;
                     }
                 }
-                &__phone {
-                    font-size: 16px;
+                .promo__wrapper{
+                    margin-top: 60px;
+                    align-items: center;
+            }
+            }
+        }
+        .advantages {
+            padding: 20px 0 20px;
+            &__wrapper {
+                margin-top: 30px;
+            }
+        }
+        .carousel {
+            &__inner {
+                width: 350px;
+                img {
+                    width: 100%;
                 }
             }
-            .promo__wrapper{
-                margin-top: 60px;
-                align-items: center;
-          }
+        }
+        .catalog {
+            &__tabs {
+                margin: 20px 0;
+            }
+            &__tab {
+                width: 155px;
+                font-size: 14px;
+            }
+            &__content {
+                margin-top: 40px;
+                padding: 0;
+            }
+            &-item {
+                margin: 0 15px 15px 0;
+                &:nth-child(3n+3) {
+                    margin-right: 15px;
+                }
+                &:nth-child(2n+2) {
+                    margin-right: 0;
+                }
+            }
         }
     }
-    .advantages {
-        padding: 20px 0 20px;
-        &__wrapper {
-            margin-top: 30px;
+}
+@media (max-width: 640px) {
+    .page {
+        .catalog {
+            &__content {
+                padding: 0 20px;
+                margin-top: 40px;
+            }
+            &-item {
+                margin: 0 0px 15px 0;
+                &:nth-child(3n+3) {
+                    margin-right: 0;
+                }
+            }
         }
-    }}
+    }
 }
 @media (max-width: 575px) {
     .page {
@@ -95,6 +176,54 @@
             }
             .feed-form {
                margin: 20px auto 0;
+            }
+        }
+        .carousel {
+            padding: 20px 0;
+            &__inner {
+                width: 300px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .catalog {
+            padding: 0 0 30px;
+            .title {
+                font-size: 33px;
+                line-height: 38px;
+            }
+            &__tabs {
+                margin: 20px 0;
+                flex-direction: column;
+            }
+            &__tab {
+                margin-top: 10px;
+                width: 200px;
+                font-size: 18px;
+            }
+            &__content {
+                padding: 0px;
+                margin-top: 40px;
+            }
+        }
+        .reviews {
+            &__wrapper {
+                margin-top: 35px;
+            }
+            &__item {
+                flex-direction: column;
+                align-items: center;
+            }
+            &__img {
+                margin-right: 0;
+            }
+            &__descr {
+                padding: 10px;
+                text-align: center;
+            }
+            hr {
+                margin: 20px 0 20px;
             }
         }
     }
