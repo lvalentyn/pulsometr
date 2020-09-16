@@ -5,6 +5,19 @@
                 margin: 0 15px 15px 0;
             }
         }
+        .footer {
+            &__info {
+                position: absolute;
+                padding: 50px 68px 60px;
+                width: 460px;
+                height: 270px;
+                top: 0;
+                left: 100%;
+                transform: translateX(-100%);
+                background-color: $main-color;
+                opacity: .8;
+            }
+        }
     }
 }
 @media (max-width: 991px) {
@@ -98,6 +111,17 @@
                 &:nth-child(2n+2) {
                     margin-right: 0;
                 }
+            }
+        }
+        .footer {
+            &__info{
+                display: none;
+            }
+            &__info-mobile {
+                display: block;
+            }
+            iframe {
+                height: 500px;
             }
         }
     }
@@ -208,6 +232,7 @@
             }
         }
         .reviews {
+            padding-bottom: 50px;
             &__wrapper {
                 margin-top: 35px;
             }
@@ -226,5 +251,7 @@
                 margin: 20px 0 20px;
             }
         }
+        
+
     }
 }
