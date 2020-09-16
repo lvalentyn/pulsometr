@@ -33,4 +33,28 @@
             }
         }
     }
+    &__heart {
+        &_animated {
+            animation: heartbeat 2s ease-in infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
+    &__cup {
+        &_animated {
+        animation: cup 1s ease-in-out infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
+    &__shoe {
+        &_animated {
+            animation: shoe 2s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
 }
